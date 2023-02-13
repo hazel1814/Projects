@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Site</title>
+</head>
+
+<body>
+    <form id="add_form" onsubmit="add_product(event)">
+
+        <label for="price">Selling Price</label>
+        <input type="number" name="price" id="price_id" required>
+
+        <label for="pname">Product Name</label>
+        <input type="text" name="pname" id="product_id" required>
+
+        <button type="submit" id="add_product_id">Add Product</button>
+    </form>
+    <h1>Products</h1>
+    <ul id="list_of_products"></ul>
+    <h3>Total Value Worth of Products: Rs <span id="total_price">0</span></h3>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.min.js"></script>
+<script src="product.js"></script>
+
+</html>
